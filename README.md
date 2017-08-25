@@ -14,5 +14,5 @@ sudo crontab -e
 ```
 
 ```bash
-*/15 * * * * /home/elanor/ftp/files/matilda-tools/newstories_mothership.php
+*/15 * * * * /home/matilda-tools/newstories_mothership.php
 ```
