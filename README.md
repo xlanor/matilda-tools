@@ -15,7 +15,7 @@ sudo crontab -e
 You can set 20 to a value that you are comfortable with. Read up on cronjob scheduling for more information.
 
 ```bash
-*/20 * * * * /home/matilda-tools/newstories_mothership.php
+*/20 * * * * /usr/bin/php7.0 /home/matilda-tools/newstories_mothership.php
 ```
 
 To make sure that the cronjob is running,
