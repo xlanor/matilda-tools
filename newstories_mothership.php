@@ -47,7 +47,7 @@ foreach ($links as $link)
 	$row = $checkx->fetchAll();
 	if (!$row)
 	{
-		$insertms = "INSERT INTO Mothership VALUES(NULL,:mstitle,:mstime,:msurl)"; //use lower to help w/searching.
+	    $insertms = "INSERT INTO Mothership VALUES(NULL,:mstitle,:mstime,:msurl)"; 
 	    $insertx = $dbh->prepare($insertms);
 	    $insertx->bindValue(':mstitle',$link['title']);
 	    $insertx->bindValue(':mstime',$link['pub_time']);
