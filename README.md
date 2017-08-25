@@ -12,7 +12,14 @@ To execute, write your own connection string (I used PDO as compared to mySQLi f
 ```bash
 sudo crontab -e
 ```
+You can set 20 to a value that you are comfortable with. Read up on cronjob scheduling for more information.
 
 ```bash
-*/15 * * * * /home/matilda-tools/newstories_mothership.php
+*/20 * * * * /home/matilda-tools/newstories_mothership.php
 ```
+
+To make sure that the cronjob is running,
+```bash
+grep CRON /var/log/syslog
+```
+
