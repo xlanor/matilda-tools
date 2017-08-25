@@ -1,5 +1,6 @@
 # Matilda-tools
 Tools for Matilda, a python telegram bot.
+Matilda is mostly written in python, but I'll be writing her tools in PHP where possible, so that I can take the opportunity to brush up on both languages.
 
 ## Licensing
 Matilda-tools is licensed under the [Affero General Public License Version 3](LICENSE).
