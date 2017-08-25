@@ -3,7 +3,7 @@ include('connection.php');
 include('simple_html_dom.php');
 $html = file_get_contents('https://mothership.sg/');
 $targetPage = 'https://mothership.sg/wp-admin/admin-ajax.php?action=alm_query_posts&query_type=standard&nonce=c218689620&repeater=default&theme_repeater=null&acf=&nextpage=&cta=&comments=&post_type%5B%5D=post&sticky_posts=&post_format=&category=&category__not_in=&tag=&tag__not_in=&taxonomy=&taxonomy_terms=&taxonomy_operator=&taxonomy_relation=&meta_key=&meta_value=&meta_compare=&meta_relation=&meta_type=&author=&year=&month=&day=&post_status=&order=DESC&orderby=date&post__in=&post__not_in=&exclude=&search=&custom_args=&posts_per_page=10&page=0&offset=0&preloaded=false&seo_start_page=1&paging=false&lang=&slug=home&canonical_url=https%3A%2F%2Fmothership.sg%2F';
-// We use @ here to negotiate any html errors and make code sample shorter in demo purposes.
+
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
