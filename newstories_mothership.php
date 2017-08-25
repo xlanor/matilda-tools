@@ -1,3 +1,8 @@
+/*
+Mothership scrape new articles to database script.
+Run with cronjob
+Written by xlanor.
+*/
 <?php
 include('connection.php');
 include('simple_html_dom.php');
