@@ -10,6 +10,13 @@ This is a PHP script to scrape new stories from mothership, and save the Title a
 
 To execute, write your own connection string (I used PDO as compared to mySQLi for this script, so take note of that), create a database table in your local mySQL table, and run as a cronjob. 
 
+## newstories_mothership.php
+This is a PHP script to scrape new stories from Straits Times using the RSS feed, and save the Title, URL and category into a mySQL Database for retrieving by Matilda, in a soon-to-be-built search function.
+
+To execute, write your own connection string (I used PDO as compared to mySQLi for this script, so take note of that), create a database table in your local mySQL table, and run as a cronjob. 
+
+## running the script as a cronjob.
+
 ```bash
 sudo crontab -e
 ```
