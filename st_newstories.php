@@ -63,15 +63,15 @@ $x->loadXML($result);
 $stval = 'http://www.straitstimes.com/';
 $feedlist = array();
 foreach($x->getElementsByTagName('outline') as $item) 
-	{
-		$rssurl = $item->getAttribute('xmlUrl');
-		$combinedurl = $stval.$rssurl;
-		$category = $item->getAttribute('title');
-		$feedlist[] = array('url'=>$combinedurl,'cat'=>$category);
-	}
+{
+	$rssurl = $item->getAttribute('xmlUrl');
+	$combinedurl = $stval.$rssurl;
+	$category = $item->getAttribute('title');
+	$feedlist[] = array('url'=>$combinedurl,'cat'=>$category);
+}
 foreach($feedlist as $feed)
-	{
-		insertdb($feed['url'],$feed['cat']);
-	}
+{
+	insertdb($feed['url'],$feed['cat']);
+}
 
 ?>
