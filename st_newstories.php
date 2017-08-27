@@ -39,11 +39,11 @@ function insertdb($url, $category){
 			date_default_timezone_set ('Asia/Singapore');
 			$timestamp = strtotime($grabbed['date']);
 			$date = date("Y-m-d H:i:s", $timestamp);
-			$insertstq = "INSERT INTO StraitsTimes VALUES(NULL,:title,:link,:time,:cat)";
+			$insertstq = "INSERT INTO StraitsTimes VALUES(NULL,:title,:link,:pubtime,:cat)";
 			$insertstx = $dbh->prepare($insertstq);
 			$insertstx->bindParam(':title',$grabbed['title']);
 			$insertstx->bindParam(':link',$grabbed['link']);
-			$insertstx->bindParam(':time', $date);
+			$insertstx->bindParam(':pubtime', $date);
 			$insertstx->bindParam(':cat',$grabbed['category']);
 			$insertstx->execute();
 		}
