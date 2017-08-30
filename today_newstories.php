@@ -87,11 +87,11 @@ $rssrow = $html->find('ul[class=rss]');
 foreach ($rssrow as $row)
 {
 	//gets title
-	$title = $row->find('a');
-	foreach($title as $t)
+	$link = $row->find('a');
+	foreach($link as $t)
 	{
 		$tit = $t->href;
-		$rsslist[] = array('title'=>$tit);
+		$rsslist[] = array('link'=>$tit);
 	}
 	
 	//places into array
@@ -100,7 +100,7 @@ foreach ($rssrow as $row)
 //now that we have a list of all rss urls, time to pump through this array
 foreach($rsslist as $rss)
 {
-	insertDB($rss['title']);
+	insertDB($rss['link']);
 }
 delVid(); //removes all videos, because Matilda does not support videos.
 
