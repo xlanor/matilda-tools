@@ -1,6 +1,7 @@
 <?php
 /*
 *PHP Script to consolidate databases
+*Only use this if you were on the old db structure (4 seperate tables for news)
 *Written by xlanor
 *For Matilda
 *The purpose of this script is to place all previous tables under one table.
